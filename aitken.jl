@@ -1,4 +1,6 @@
-const N=1000000
+function aitken()
+
+N=1000000
 
 Sn(n)=sum([(-1)^k/(2k+1) for k=0:n]) #収束の遅いnumber series
 
@@ -29,10 +31,13 @@ for n=0:10
   end
 end
 
-println(S)
+#println(S)
 
 println("error1=",err1)
 println("error2=",err2)
 println("S_real=",S_real)
 println("S_slow=",S_slow)
 println("S(",m-1,",",h,")",S[m,h+1])
+
+end
+aitken()
